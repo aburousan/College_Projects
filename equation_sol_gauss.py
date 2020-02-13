@@ -1,6 +1,6 @@
 import numpy as np
 
-def GaussElimn(a,b):
+def Gauss_sol(a,b):
     n=len(b)
     for k in range(0,n-1):
         for i in range(k+1,n):
@@ -29,7 +29,7 @@ if m==n:
 
 	for i in range(0,n):
 		B[i] = float(input("Input b[%s] = "%(i)))
-	sols = GaussElimn(A,B)
+	sols = Gauss_sol(A,B)
 	print("Solutions are : \n")
 	for i in range(n):
 		print("X[%s] = "%(i+1), sols[i])
