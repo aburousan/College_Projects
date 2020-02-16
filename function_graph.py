@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 n = int(input("Give me number of functions = "))
-print("Give me the equation (If use numpy then say numpy nato gaar mara) = ")
+print("Give me the equation (If use numpy then use np.function r nato run korta hobe na) = ")
 E = []
 for i in range(n):
 	eq = input("f(%s)"%(i))
@@ -23,6 +23,6 @@ for i in range(n):
 plt.legend(loc='best',prop={'size':12})
 plt.xlabel("x")
 plt.ylabel("functions")
-plt.title(" Sumit er chu")
+plt.title(" General Functions")
 plt.show()
 
