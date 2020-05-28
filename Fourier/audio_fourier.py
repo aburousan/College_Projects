@@ -22,9 +22,11 @@ dif[0].set_xlabel('Time'); dif[0].set_ylabel('Audio Amplitude')
 #_______________________________________________________
 fre_set = np.fft.fftfreq(N)#All the frequency for fourier transform horizontal axis
 mask = fre_set>0
-fft_vals = 2*np.abs(np.fft.fft(func_val)/len(fre_set))
+fft_vals = 2*np.abs(np.fft.fft(func_val))
+g = max(fft_vals)
+fft_val_norm = fft_vals/g
 
-dif[1].plot(fre_set[mask],fft_vals[mask],c='green')
+dif[1].plot(fre_set[mask],fft_val_norm[mask],c='green')
 #dif[1].plot(fre_set,fft_vals,c='green')
 #In quantum domain we work with negative frequency so for that just remove mask i.e., and line 29 and comment in line 30
 dif[1].set_title('Fast Fourier Transform')
