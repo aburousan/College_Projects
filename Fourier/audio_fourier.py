@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import wave
-import sys
 
 
 audio_file = wave.open("music.wav","r")
