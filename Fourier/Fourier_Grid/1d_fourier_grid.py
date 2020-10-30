@@ -14,12 +14,12 @@ def H_matrix(L, V, ma,mb):
 	for i in range(N):
 		for j in range(i+1):
 			if i == j:
-				Hij[i,j] = (T0*n*(n-1)*(2*n-1))/(3*N) + V[i]
+				Hij[i,j] = (T0*n*(n-1)*(2*n-1))/(3*N)+(T0*n**2)/N+ V[i]
 			else:
 				s = 0
 				for l in range(1,n):
 					s += (l**2)*np.cos((l*2*np.pi*(i-j))/N)
-				Hij[i,j] = ((2*s*T0))/N
+				Hij[i,j] = ((2*s*T0)+(((-1)**(i-j))*T0*n**2))/N
 				Hij[j, i] = Hij[i, j]  # use Hermitian symmetry
 				
 	return Hij
