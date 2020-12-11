@@ -1,5 +1,4 @@
-import numpy as np
-
+#by K.A.Rousan
 n = float(input("Give the value of n = "))
 m = float(input("Give the value of m = "))
 def p(n,x):
