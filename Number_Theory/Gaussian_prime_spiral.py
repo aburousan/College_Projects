@@ -36,8 +36,8 @@ while True:
 		primes[0].append(d.real);primes[1].append(d.imag)
 
 
-x1 = np.ma.masked_array(plot_x[:-1], np.diff(plot_x)>=0)
-x2 = np.ma.masked_array(plot_x[:-1], np.diff(plot_x)<=0)
+#x1 = np.ma.masked_array(plot_x[:-1], np.diff(plot_x)>=0)
+#x2 = np.ma.masked_array(plot_x[:-1], np.diff(plot_x)<=0)
 
 
 plt.axhline(0,color='Black');plt.axvline(0,color='Black')
