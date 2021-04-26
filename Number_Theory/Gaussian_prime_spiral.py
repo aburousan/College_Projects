@@ -17,8 +17,7 @@ def gprime(z):#check if z is gaussian prime or not, return true or false based u
 			return False
 	d = (re**2+im**2)
 	if isprime(d):
-		if d % 4 == 1:
-			return True
+		return True
 	else:
 		return False
 
