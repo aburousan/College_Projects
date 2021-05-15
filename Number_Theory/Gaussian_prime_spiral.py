@@ -69,9 +69,11 @@ plt.savefig("img1_new.pdf", bbox_inches = 'tight',dpi = 300)
 # # plt.show()
 # plt.savefig("img4_new.pdf", bbox_inches = 'tight',dpi = 300)
 #_________________________________________________________________________________________-
-# seed3 = 277 + 232*1j
+#seed3 = 277 + 232*1j # This one can kill your computer. Try at your own risk!!
 # plot_x, plot_y, primes= gaussian_spiral(seed3)
 # loop_no = len(plot_x)-1
+# plt.ylim(-4000,4000)
+# plt.xlim(-4000,4000)
 # plt.axhline(0,color='Black');plt.axvline(0,color='Black')
 # plt.plot(plot_x,plot_y,label='Gaussian spiral',color='mediumblue',bbox_inches = 'tight')
 # plt.scatter(primes[0][0],primes[1][0],c='Black',marker='X')#starting point
@@ -82,7 +84,6 @@ plt.savefig("img1_new.pdf", bbox_inches = 'tight',dpi = 300)
 # plt.ylabel("Im(z)")
 # # plt.title("Gaussian Primes spiral")
 # plt.show()
-# # plt.savefig("img5_new.pdf", bbox_inches = 'tight',dpi = 300)
 #_____________________________________________________________________________
 # seed4 = 3 + 2*1j
 # plot_x, plot_y, primes = gaussian_spiral(seed4,loop_num=30, initial_con = False)
@@ -101,17 +102,3 @@ plt.savefig("img1_new.pdf", bbox_inches = 'tight',dpi = 300)
 # # plt.title("Gaussian Primes spiral")
 # # plt.show()
 # plt.savefig("img3_new.pdf", bbox_inches = 'tight',dpi = 300)
-#_____________________________________________________________________________
-# plt.xlim(-4000,4000)#This one will kill your computer
-# plt.ylim(-4000,4000)
-# plt.axhline(0,color='Black');plt.axvline(0,color='Black')
-# plt.plot(plot_x,plot_y,label='Gaussian spiral',color='mediumblue')#,linewidth=0.1)
-# plt.scatter(plot_x,plot_y,c='Black',label='Gaussian integers')
-# plt.scatter(primes[0][0],primes[1][0],c='Black',marker='X')#starting point
-# plt.scatter(primes[0][1::],primes[1][1::],c='Red',marker='*',label='Gaussian primes')#,s=0.001)
-# plt.grid(color='purple',linestyle='--')
-# plt.legend(loc='best',prop={'size':6})
-# plt.xlabel("x ; starting point = %s and loop number = %s "%(seed1,loop_no))
-# plt.ylabel("y")
-# plt.title("Gaussian Primes spiral")
-# plt.show()
